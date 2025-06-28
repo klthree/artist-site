@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import GalleryView from './views/GalleryView.vue';
 </script>
 
 <template>
   <div class="main-flex">
     <header>
       <nav>
-        <h1>April Brust</h1>
+        <h1>Artist Name</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </header>
-    <GalleryView />
+    <RouterView />
   </div>
 </template>
 
@@ -32,7 +31,7 @@ header {
 }
 
 .main-flex > *:not(header) {
-  flex: 3 1 0;
+  flex: 7 1 0;
 }
 
 nav {

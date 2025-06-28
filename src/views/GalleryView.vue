@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const imageModules = import.meta.glob('@/assets/images/*.{jpg,jpeg,png}', { eager: true });
 const images = (Object.values(imageModules) as { default: string }[]).map(mod => mod.default);
-console.log(images);
 </script>
 
 <template>
