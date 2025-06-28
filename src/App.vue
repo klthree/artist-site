@@ -20,8 +20,9 @@ import GalleryView from './views/GalleryView.vue';
 .main-flex {
   display: flex;
   width: 100vw;
-  max-width: 100%;
+  max-width: 90vw;
   min-height: 100vh;
+  padding-right: calc(var(--section-gap) / 2);
 }
 
 header {
