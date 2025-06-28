@@ -17,7 +17,6 @@ console.log(images);
     gap: 1rem;
     padding: 1rem;
     width: 100%;
-    max-width: 90vw;
     box-sizing: border-box;
 
     img {

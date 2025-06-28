@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import HomeView from './views/HomeView.vue';
+import { RouterLink } from 'vue-router'
 import GalleryView from './views/GalleryView.vue';
 </script>
 
@@ -16,14 +14,12 @@ import GalleryView from './views/GalleryView.vue';
     </header>
     <GalleryView />
   </div>
-  <!-- <HomeView /> -->
-  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
 .main-flex {
   display: flex;
-  width: 100%;
+  width: 100vw;
   max-width: 100%;
   min-height: 100vh;
 }
