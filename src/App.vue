@@ -9,6 +9,7 @@ import GalleryView from './views/GalleryView.vue';
   <div class="main-flex">
     <header>
       <nav>
+        <h1>April Brust</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
@@ -29,8 +30,7 @@ import GalleryView from './views/GalleryView.vue';
 
 header {
   flex: 1 1 0;
-  background: #fafafa; /* Optional: visual separation */
-  box-shadow: 1px 0 4px rgba(0,0,0,0.03);
+  background: #ffffff;
   z-index: 1;
 }
 

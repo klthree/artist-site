@@ -25,7 +25,6 @@ console.log(images);
         height: auto;
         display: block;
         object-fit: cover;
-        border-radius: 8px; /* optional, for rounded corners */
     }
 }
 </style>
