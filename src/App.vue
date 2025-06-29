@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
   <div class="main-flex">
     <header>
       <nav>
-        <h1>Artist Name</h1>
+        <h1>April Brust</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
