@@ -103,6 +103,10 @@ const imageDescriptions: Record<string, imgProps> = {
     'foot-wm': {
         title: 'Lateral View of Right Foot',
         description: 'Black and white linework is a staple of medical illustrative texts. Here a historic prosected sample from the JCB Grant Anatomy Museum at the University of Toronto is rendered in pen and ink, in the traditional style.'
+    },
+    'tree-frog-001': {
+        title: 'Red-eyed tree frog',
+        description: 'Pen and marker.\nRed-eyed tree frogs hide their colorful marks when they sleep, to blend in with the greenery. When predators threaten them, these frogs use the colored bits to startle and astonish, giving them the opportunity to leap away.'
     }
 };
 
