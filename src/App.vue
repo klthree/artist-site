@@ -9,6 +9,9 @@ import { RouterLink } from 'vue-router'
         <h1>April Brust</h1>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/editorial">Editorial</RouterLink>
+        <RouterLink to="/science">Science</RouterLink>
+        <RouterLink to="/fine">Fine Art</RouterLink>
       </nav>
     </header>
     <RouterView />
@@ -30,11 +33,17 @@ header {
   z-index: 1;
 }
 
+h1 {
+  padding-bottom: 2rem;
+}
+
 .main-flex > *:not(header) {
   flex: 7 1 0;
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   font-size: 12px;
   text-align: center;
@@ -51,8 +60,9 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  padding: 1rem 0;
+  font-size: large;
+  /* border-left: 1px solid var(--color-border); */
 }
 
 nav a:first-of-type {
