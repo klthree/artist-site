@@ -6,12 +6,12 @@ import { RouterLink } from 'vue-router'
   <div class="main-flex">
     <header>
       <nav>
-        <h1>April Brust</h1>
-        <RouterLink to="/">Home</RouterLink>
+        <h1>April</h1>
+        <RouterLink to="/home">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/editorial">Editorial</RouterLink>
         <RouterLink to="/science">Science</RouterLink>
-        <RouterLink to="/fine">Fine Art</RouterLink>
+        <RouterLink to="/fineart">Fine Art</RouterLink>
       </nav>
     </header>
     <RouterView />
