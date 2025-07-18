@@ -7,11 +7,13 @@ import { RouterLink } from 'vue-router'
     <header>
       <nav>
         <h1>April</h1>
-        <RouterLink to="/home">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/editorial">Editorial</RouterLink>
-        <RouterLink to="/science">Science</RouterLink>
-        <RouterLink to="/fineart">Fine Art</RouterLink>
+        <div class="links">
+          <RouterLink to="/home">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/editorial">Editorial</RouterLink>
+          <RouterLink to="/cartoon">Cartoon</RouterLink>
+          <RouterLink to="/animation">Animation</RouterLink>
+        </div>
       </nav>
     </header>
     <RouterView />
@@ -24,13 +26,20 @@ import { RouterLink } from 'vue-router'
   width: 100vw;
   max-width: 90vw;
   min-height: 100vh;
-  padding-right: calc(var(--section-gap) / 2);
 }
 
 header {
   flex: 1 1 0;
   background: #ffffff;
   z-index: 1;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 h1 {
@@ -62,37 +71,46 @@ nav a {
   display: inline-block;
   padding: 1rem 0;
   font-size: large;
-  /* border-left: 1px solid var(--color-border); */
 }
 
 nav a:first-of-type {
   border: 0;
 }
 
-/* @media (min-width: 1024px) {
+@media (max-width: 600px) {
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  flex: 1 1 0;
+  background: #ffffff;
+  z-index: 1;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
+  .main-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  .main-flex > *:not(header) {
+    width: 100%;
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
+    padding: 0;
+    justify-self: center
+  } 
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
-} */
+
+  .links * {
+    font-size: small;
+  }
+}
+
 </style>

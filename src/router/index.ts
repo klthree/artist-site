@@ -5,11 +5,15 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/',
+      redirect: '/home'
+    },
+    {
       path: '/:category',
-      name: 'home',
+      name: '',
       component: HomeView,
       meta: {
-        title: 'Art',
+        title: 'April Brust',
       },
       props: true
     },
@@ -18,8 +22,12 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        title: 'About',
+        title: 'About April',
       },
+    },
+    {
+      path: '/:catchAll(.*)',
+      redirect: '/home'
     }
   ],
 })
@@ -29,7 +37,7 @@ router.beforeEach((to, from, next) => {
   if (to.meta.title) {
     document.title = to.meta.title as string;
   } else {
-    document.title = 'April'; // Fallback title
+    document.title = 'April Brust'; // Fallback title
   }
   next();
 });
