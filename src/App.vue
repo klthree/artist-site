@@ -88,6 +88,7 @@ nav a:first-of-type {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   .main-flex > *:not(header) {
